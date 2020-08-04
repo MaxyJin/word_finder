@@ -1,6 +1,9 @@
 import re
 import os
 
+"""файл в котором будем искать нужно положить в директорию к файлу с кодом"""
+"""Работает с поиском по английскому тексту"""
+
 file_name = input("Введите имя файла: ")
 """Получение имени файла"""
 current_dir = os.path.abspath(os.path.dirname(__file__))
@@ -22,5 +25,5 @@ for word in sorting_word_pattern:
 frequency_list = frequency.keys()
 
 for words in frequency_list:
-    print(f'В файле {file_name} найдено {frequency[words]} слова {sorting_word_pattern[1]}')
+    print(frequency[words])
 """Отображение информации о количестве найденных слов"""
