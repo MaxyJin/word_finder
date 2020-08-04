@@ -4,7 +4,7 @@ import os
 """файл в котором будем искать нужно положить в директорию к файлу с кодом"""
 """Работает с поиском по английскому тексту"""
 
-file_name = input("Введите имя файла: ")
+file_name = input("Введите имя файла(с указанием расширения): ")
 """Получение имени файла"""
 current_dir = os.path.abspath(os.path.dirname(__file__))
 file_path = os.path.join(current_dir, file_name)
